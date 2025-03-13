@@ -17,7 +17,10 @@ Press *SPACE* to solve the sudoku
 Press *Z* to reset the sudoku
 
 ## EXAMPLES
-[Screencast from 03-13-2025 06:41:58 PM.webm](https://github.com/user-attachments/assets/a548f4dc-7690-4ba4-b1b2-987101c57d28)
+
+
+https://github.com/user-attachments/assets/27f9fbcb-64f5-4c4e-b0f0-cc6513089307
+
 
 
 ## COMPLETE TUTORIAL
