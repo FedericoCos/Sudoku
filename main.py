@@ -78,9 +78,12 @@ class Sudoku:
                         if event.key == pg.K_BACKSPACE:
                             self.save_number(0)
                         
-                    if event.key == pg.K_SPACE:
-                        self.solved = True
-                        self.backtracking()
+                        if event.key == pg.K_SPACE:
+                            self.solved = True
+                            self.backtracking()
+                    elif event.key ==  pg.K_z:
+                        self.solved = False
+                        self.copy_of_grid = deepcopy(self.grid)
 
             
             
@@ -108,6 +111,7 @@ class Sudoku:
     
     def save_number(self, num):
         self.grid[self.cell_to_write[0]][self.cell_to_write[1]] = num
+        self.copy_of_grid[self.cell_to_write[0]][self.cell_to_write[1]] = num
         self.cell_to_write = [-1, -1]
         
     def draw_fixed_numbers(self):
